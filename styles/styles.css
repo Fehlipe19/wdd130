@@ -1,0 +1,30 @@
+main {
+    max-width: 60%;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+aside {
+    width: 35%;
+    margin: 0;
+    border: 2px solid #4F7942;
+    padding: 5px;
+    background-color: #8B0000;
+    color: #F4BB44
+}
+
+aside > img {
+    width: 200px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    
+}
