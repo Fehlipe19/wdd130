@@ -1,8 +1,71 @@
+:root {
+    --primary-color: #455F48;
+    --secondary-color: #DFEAD6;
+    --accent1-color: #13315C;
+    --accent2-color: #A7CAF1;
+    --heading-font: "Rammeto One", sans-serif;
+    --body-font: "sarala", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    font-family: "Rammeto One", sans-serif;
+    color: var(--primary-color);
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
 p {
     font-family: "sarala", sans-serif;
     font-size: 1.2rem;
 }
 
-h1, h2 {
-    font-family: "Rammetto One", sans-serif;
+
+.socialmedia a {
+    text-decoration: none;
 }
