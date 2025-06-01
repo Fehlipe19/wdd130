@@ -13,16 +13,55 @@
     box-sizing: border-box;
 }
 
-header{
+body {
+    background-color: var(--secondary-color);
+}
+
+header, footer{
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
 
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
+header{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    padding: 16px;
 }
 
+#image-logo {
+    margin-left: 16px;
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: wavy underline;
+    text-decoration-color: var(--secondary-color);
+}
+
+a:active {
+    color: var(--secondary-color);
+}
+
+main {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: rgba(167, 202, 241, 0.5);
+    padding: 0 16px 16px 16px;
+}
 
 body {
     font-family: var(--body-font);
@@ -44,7 +83,7 @@ body {
     left: 0;
     top: 80px;
     width: 95%;
-    height: 125px;
+    /* height: 125px; */
     /* display: flex; */
     background-color: var(--secondary-color);
 }
@@ -73,8 +112,11 @@ h1 {
 }
 
 nav, p, section, article {
+    padding: 16px;
+}
+
+p, section, article {
     margin: 16px;
-    padding: 8px;
 }
 
 p {
@@ -82,9 +124,68 @@ p {
     font-size: 1.2rem;
 }
 
-li {
+h2 {
+    font-size: 2.3rem;
+    margin-bottom: 16px;
+}
+
+.history, .adventure {
+    margin: 8px 0;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.adventure {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 16px;
+}
+
+.adventure-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.adventure-images figure img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.history-content {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.history-content img {
+    height: 300px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.socialmedia {
+    display: flex;
     list-style-type: none;
-    width: 32px;
+}
+
+.socialmedia img {
+    width: 40px;
+    margin: 8px;
 }
 
 .socialmedia a {
