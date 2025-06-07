@@ -33,12 +33,20 @@ header{
     margin-left: 16px;
 }
 
-.navigation{
+.navigation, .company-info {
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.company-info {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color)
+}
+
+.navigation{
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 a {
@@ -47,7 +55,7 @@ a {
     font-weight: bolder;
 }
 
-a:hover {
+a:hover, .info-detail:hover {
     text-decoration: wavy underline;
     text-decoration-color: var(--secondary-color);
 }
@@ -59,8 +67,11 @@ a:active {
 main {
     max-width: 80%;
     margin: 0 auto;
-    background-color: rgba(167, 202, 241, 0.5);
     padding: 0 16px 16px 16px;
+}
+
+section {
+    background-color: rgba(167, 202, 241, 0.5);
 }
 
 body {
@@ -68,7 +79,7 @@ body {
     color: var(--accent1-color);
 }
 
-.hero {
+.hero{
     position: relative;
 }
 
@@ -100,9 +111,13 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-h1 {
+#dry-oar {
     position: absolute;
     top: 20px;
+}
+
+
+h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -127,6 +142,10 @@ p {
 h2 {
     font-size: 2.3rem;
     margin-bottom: 16px;
+}
+
+.info > h2 {
+    color: var(--secondary-color);
 }
 
 .history, .adventure {
