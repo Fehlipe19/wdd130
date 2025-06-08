@@ -35,27 +35,36 @@
             </address>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18768.93370640349!2d-116.79288537801985!3d45.07525559023961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a421007b1e59a7%3A0x80b4775f5c0a26f8!2sCopper%20Creek%20Campground!5e0!3m2!1sen!2sus!4v1749255556035!5m2!1sen!2sus" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <section class="contact-form">
+        <section class="contact-form-section">
             <h2>Get in Touch</h2> 
-            <form action="https://example.com/submit" method="post">
+            <form action="https://example.com/submit" method="post" class="contact-form"> 
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Name" required>
                 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
 
-                <label for="inquiry">General Inquiry</label>
-                <input type="radio" id="inquiry" name="purpose">
-                <label for="question">Reservation Question</label>
-                <input type="radio" id="question" name="purpose">
-                <label for="suggestion">Website Suggestion</label>
-                <input type="radio" id="suggestion" name="purpose">
+                <div class="radio-group">
+                    <label for="inquiry">General Inquiry
+                        <input type="radio" id="inquiry" name="purpose">
+                    </label>
+                    <label for="question">Reservation Question
+                        <input type="radio" id="question" name="purpose">
+                    </label>
+                    <label for="suggestion">Website Suggestion
+                        <input type="radio" id="suggestion" name="purpose">
+                    </label>
+                </div>
+
                 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
 
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                <input type="checkbox" id="newsletter" name="newsletter">
+                <div class="checkbox-group">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                    </label>
+                </div>
                 
                 <button type="submit">Send Message</button>
             </form>
