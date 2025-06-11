@@ -294,6 +294,45 @@ article p {
 
 .call-to-action {
     display: grid;
-    grid-template-columns: repeat(1fr, 5);
-    grid-template-rows: repeat(1fr, 3);
+    padding: 32px;
+    grid-template-columns: repeat(5, .22fr);
+    grid-template-rows: repeat(5, 90px);
+    background-color: var(--accent1-color);
+}
+
+.cta-text { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    grid-column: 3 / 6;
+    grid-row:  2/ 5;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+}
+
+.cta-image {
+    grid-column: 1 / 4;
+    grid-row: 1 / 6;
+    object-fit: cover;
+    height: 100%;
+}
+
+.cta-button {
+    padding: 16px;
+    /* margin: 0 0 4px 0; */
+    background-color: var(--accent1-color);
+    border-radius: 16px;
+}
+
+.cta-button:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    cursor: pointer;
+    border: 2px solid var(--accent1-color);
 }
