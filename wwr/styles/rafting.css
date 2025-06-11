@@ -2,6 +2,7 @@
     --primary-color: #455F48;
     --secondary-color: #DFEAD6;
     --accent1-color: #13315C;
+    /* --accent2-color: #CADFF7; */
     --accent2-color: #A7CAF1;
     --heading-font: "Rammeto One", sans-serif;
     --body-font: "sarala", sans-serif;
@@ -151,16 +152,15 @@ body {
     margin: 2px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-#dry-oar {
+.main-header {
     position: absolute;
     top: 20px;
 }
-
 
 h1 {
     width: 100%;
@@ -171,11 +171,11 @@ h1 {
     color: var(--secondary-color);
 }
 
-nav, p, section, article {
+nav, p, section, article, h3 {
     padding: 16px;
 }
 
-p, section, article {
+p, section, article, h3 {
     margin: 16px;
 }
 
@@ -202,6 +202,12 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+}
+
+.adventure-offers {
+    display: flex;
+    background-color: transparent;
+
 }
 
 .adventure {
@@ -254,4 +260,40 @@ footer {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+#clear-background {
+    padding: 0 0 0 32px;
+    margin: 0;
+    background-color: transparent;
+    color: var(--accent2-color)
+}
+
+article p {
+    margin: 0 0 0 32px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 8px;
+}
+
+.img-background {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    padding:12px;
+    background-color: var(--primary-color);
+}
+
+.card-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.call-to-action {
+    display: grid;
+    grid-template-columns: repeat(1fr, 5);
+    grid-template-rows: repeat(1fr, 3);
 }
